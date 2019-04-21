@@ -1,0 +1,73 @@
+/*Quote Styles*/
+
+.quote {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.quote .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-color: #80a3db;
+}
+
+.quote h1 {
+  font: bold 60px "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.quote h3 {
+  font: normal 28px "Open Sans", sans-serif;
+  margin-bottom: 40px;
+}
+
+.quote a.btn {
+  padding: 20px 46px;
+}
+
+.quote button {
+  padding: 20px 46px;
+}
+
+.quote-content-area {
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .quote {
+    min-height: 600px;
+  }
+
+  .quote h1 {
+    font-size: 48px;
+  }
+
+  .quote h3 {
+    font-size: 24px;
+  }
+
+  .quote a.btn {
+    padding: 15px 40px;
+  }
+
+  .quote button {
+    padding: 15px 40px;
+  }
+}
